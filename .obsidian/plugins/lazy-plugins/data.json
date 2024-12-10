@@ -628,6 +628,12 @@
       },
       "callout-toggles": {
         "startupType": "instant"
+      },
+      "card-board": {
+        "startupType": "disabled"
+      },
+      "docxer": {
+        "startupType": "instant"
       }
     }
   }
