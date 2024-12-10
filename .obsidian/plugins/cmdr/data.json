@@ -1,0 +1,88 @@
+{
+  "confirmDeletion": true,
+  "showAddCommand": true,
+  "debug": false,
+  "editorMenu": [],
+  "fileMenu": [
+    {
+      "id": "workspace:copy-path",
+      "icon": "lucide-copy",
+      "name": "Copy file path",
+      "mode": "any"
+    },
+    {
+      "id": "workspace:export-pdf",
+      "icon": "paperclip",
+      "name": "Export to PDF...",
+      "mode": "any"
+    },
+    {
+      "id": "workspace:export-pdf",
+      "icon": "paperclip",
+      "name": "Export to PDF...",
+      "mode": "any"
+    }
+  ],
+  "leftRibbon": [
+    {
+      "id": "app:open-settings",
+      "icon": "lucide-settings",
+      "name": "Open settings",
+      "mode": "any"
+    },
+    {
+      "id": "obsidian-hider:toggle-hider-status",
+      "icon": "sidebar-close",
+      "name": "Hider: Toggle status bar",
+      "mode": "any"
+    },
+    {
+      "id": "backlink:open",
+      "icon": "lucide-link",
+      "name": "Backlinks: Show backlinks",
+      "mode": "any"
+    },
+    {
+      "id": "outgoing-links:open",
+      "icon": "lucide-link",
+      "name": "Outgoing links: Show outgoing links",
+      "mode": "any"
+    },
+    {
+      "id": "file-explorer:reveal-active-file",
+      "icon": "lucide-navigation",
+      "name": "Files: Reveal current file in navigation",
+      "mode": "any"
+    },
+    {
+      "id": "obsidian-git:push",
+      "icon": "refresh-cw",
+      "name": "Git: Commit-and-sync",
+      "mode": "any"
+    }
+  ],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [],
+  "macros": [],
+  "explorer": [],
+  "hide": {
+    "statusbar": [],
+    "leftRibbon": [
+      "Open quick switcher",
+      "Open graph view"
+    ]
+  },
+  "spacing": "8",
+  "advancedToolbar": {
+    "rowHeight": 48,
+    "rowCount": 1,
+    "spacing": 0,
+    "buttonWidth": 48,
+    "columnLayout": false,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 0
+  }
+}

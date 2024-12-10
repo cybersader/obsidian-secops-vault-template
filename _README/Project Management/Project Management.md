@@ -1,0 +1,3 @@
+- Use the "Projects" plugin
+	- ideally, go by tags like "project/project_name_here"
+- Use the "Tasks" plugin to quickly create, manage, and prioritize tasks

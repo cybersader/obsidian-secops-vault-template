@@ -1,0 +1,1 @@
+- [How to use Obsidian Sync Effectively and Safely - Meta - Obsidian Forum](https://forum.obsidian.md/t/how-to-use-obsidian-sync-effectively-and-safely/80545)
