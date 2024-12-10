@@ -1,0 +1,48 @@
+name: Create Release from Vault
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Install yq (YAML CLI parser)
+        run: |
+          sudo wget https://github.com/mikefarah/yq/releases/download/v4.35.2/yq_linux_amd64 -O /usr/local/bin/yq
+          sudo chmod +x /usr/local/bin/yq
+
+      - name: Extract version from markdown front matter
+        id: extract_version
+        run: |
+          VERSION=$(yq e '.version' release-info.md)
+          NOTES=$(yq e '.release_notes' release-info.md)
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "release_notes=$NOTES" >> $GITHUB_OUTPUT
+
+      - name: Zip the vault
+        run: |
+          zip -r obsidian-vault-${{ steps.extract_version.outputs.version }}.zip ./*
+
+      - name: Create GitHub Release
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{ steps.extract_version.outputs.version }}
+          release_name: "Obsidian Vault v${{ steps.extract_version.outputs.version }}"
+          body: ${{ steps.extract_version.outputs.release_notes }}
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.create-release.outputs.upload_url }}
+          asset_path: obsidian-vault-${{ steps.extract_version.outputs.version }}.zip
+          asset_name: obsidian-vault-${{ steps.extract_version.outputs.version }}.zip
+          asset_content_type: application/zip
