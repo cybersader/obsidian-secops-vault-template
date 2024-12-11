@@ -31,6 +31,10 @@ date modified: Monday, December 9th 2024, 10:21 pm
 
 - I've named folders with commas to show different ways to describe the space.  Don't feel like you have to use either of them for structuring the vault.
 
+## DROPZONE
+
+- Use ISO 8601 with YAML timestamp (leave moment JS empty)
+
 ## 1) Folder/Vault Structure
 
 - Projects, Workspaces
