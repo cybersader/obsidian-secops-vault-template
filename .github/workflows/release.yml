@@ -19,19 +19,33 @@ jobs:
           sudo wget https://github.com/mikefarah/yq/releases/download/v4.35.2/yq_linux_amd64 -O /usr/local/bin/yq
           sudo chmod +x /usr/local/bin/yq
 
-      - name: Extract version, name, and notes from markdown front matter
+      - name: Extract version, name, and settings from front matter
         id: extract_data
         run: |
           VERSION=$(yq e '.version' release-info.md)
-          NOTES=$(yq e '.release_notes' release-info.md)
           NAME=$(yq e '.release_name' release-info.md)
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
-          echo "release_notes=$NOTES" >> $GITHUB_OUTPUT
-          echo "release_name=$NAME" >> $GITHUB_OUTPUT
+          ONLY_NEW=$(yq e '.only_release_if_new' release-info.md)
 
-      - name: Zip the vault
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "release_name=$NAME" >> $GITHUB_OUTPUT
+          echo "only_release_if_new=$ONLY_NEW" >> $GITHUB_OUTPUT
+
+      - name: Extract release body from Markdown
+        id: extract_body
         run: |
-          zip -r obsidian-vault-${{ steps.extract_data.outputs.version }}.zip ./*
+          # Remove the front matter lines including the first and second '---'
+          # The first sed removes the top '---' and everything before it
+          # The second sed removes up to the next '---', leaving only the body
+          BODY=$(sed '1,/^---$/d' release-info.md | sed '1,/^---$/d')
+          echo "release_body<<EOF" >> $GITHUB_OUTPUT
+          echo "$BODY" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Zip the vault (excluding workflows and release-info)
+        run: |
+          zip -r obsidian-vault-${{ steps.extract_data.outputs.version }}.zip ./* \
+          -x ".github/*" \
+          -x "release-info.md"
 
       - name: Check if release already exists
         id: check_release
@@ -48,8 +62,17 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Decide whether to create release
+        id: decide
+        run: |
+          if [ "${{ steps.extract_data.outputs.only_release_if_new }}" = "true" ] && [ "${{ steps.check_release.outputs.exists }}" = "true" ]; then
+            echo "should_release=false" >> $GITHUB_OUTPUT
+          else
+            echo "should_release=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Delete existing release and tag if found
-        if: steps.check_release.outputs.exists == 'true'
+        if: steps.decide.outputs.should_release == 'true' && steps.check_release.outputs.exists == 'true'
         run: |
           RELEASE_ID=$(curl -s \
             -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
@@ -74,18 +97,20 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create GitHub Release
+        if: steps.decide.outputs.should_release == 'true'
         id: create_release
         uses: actions/create-release@v1
         with:
           tag_name: ${{ steps.extract_data.outputs.version }}
           release_name: ${{ steps.extract_data.outputs.release_name }}
-          body: ${{ steps.extract_data.outputs.release_notes }}
+          body: ${{ steps.extract_body.outputs.release_body }}
           draft: false
           prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload Release Asset
+        if: steps.decide.outputs.should_release == 'true'
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
