@@ -22,21 +22,26 @@ jobs:
       - name: Extract version, name, and settings from front matter
         id: extract_data
         run: |
-          VERSION=$(yq e '.version' release-info.md)
-          NAME=$(yq e '.release_name' release-info.md)
-          ONLY_NEW=$(yq e '.only_release_if_new' release-info.md)
+          # Extract only the YAML front matter between the first two --- lines
+          FRONT_MATTER=$(awk 'NR==1 && /^---$/ {f=1; next} f && /^---$/ {f=0; exit} f' release-info.md)
+          
+          # Parse the extracted YAML with yq
+          VERSION=$(echo "$FRONT_MATTER" | yq e '.version' -)
+          NAME=$(echo "$FRONT_MATTER" | yq e '.release_name' -)
+          ONLY_NEW=$(echo "$FRONT_MATTER" | yq e '.only_release_if_new' -)
 
           echo "version=$VERSION" >> $GITHUB_OUTPUT
           echo "release_name=$NAME" >> $GITHUB_OUTPUT
           echo "only_release_if_new=$ONLY_NEW" >> $GITHUB_OUTPUT
 
-      - name: Extract release body from Markdown
+      - name: Extract release body from Markdown (below front matter)
         id: extract_body
         run: |
-          # Remove the front matter lines including the first and second '---'
-          # The first sed removes the top '---' and everything before it
-          # The second sed removes up to the next '---', leaving only the body
+          # Extract lines after the second '---'
+          # First remove everything up to and including the first '---'
+          # Then remove everything up to and including the next '---'
           BODY=$(sed '1,/^---$/d' release-info.md | sed '1,/^---$/d')
+          
           echo "release_body<<EOF" >> $GITHUB_OUTPUT
           echo "$BODY" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
