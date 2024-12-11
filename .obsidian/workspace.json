@@ -199,7 +199,6 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "omnisearch:Omnisearch": false,
       "cmdr:Open settings": false,
       "cmdr:Hider: Toggle status bar": false,
@@ -210,7 +209,8 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "templater-obsidian:Templater": false,
       "callout-manager:Insert Callout": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "ba8ee6f85163311f",
