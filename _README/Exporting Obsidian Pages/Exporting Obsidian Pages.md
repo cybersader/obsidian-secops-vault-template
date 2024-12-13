@@ -1,9 +1,10 @@
 ---
-aliases: 
-tags: 
-date created: Monday, December 2nd 2024, 3:49 pm
-date modified: Monday, December 9th 2024, 7:59 pm
+aliases: []
+tags: []
+date created: 2024-12-02T15:49:26-05:00
+date modified: 2024-12-12T21:15:04-05:00
 ---
+
 - Plugins
 	- Pandoc
 - [Custom word template with Pandoc pluugin - Help - Obsidian Forum](https://forum.obsidian.md/t/custom-word-template-with-pandoc-pluugin/41685 "Custom word template with Pandoc pluugin - Help - Obsidian Forum")
@@ -18,3 +19,7 @@ date modified: Monday, December 9th 2024, 7:59 pm
 - [Exporting Templates to PDF : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/xpyawt/exporting_templates_to_pdf/ "Exporting Templates to PDF : r/ObsidianMD")
 - [Customizing PDF export per note - Share &amp; showcase - Obsidian Forum](https://forum.obsidian.md/t/customizing-pdf-export-per-note/34802 "Customizing PDF export per note - Share &amp; showcase - Obsidian Forum")
 - [Customising PDF formatting - Help - Obsidian Forum](https://forum.obsidian.md/t/customising-pdf-formatting/12534 "Customising PDF formatting - Help - Obsidian Forum")
+
+# Pandoc - Reference Docs
+
+- 

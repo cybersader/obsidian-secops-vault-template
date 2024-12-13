@@ -3,7 +3,7 @@
   "ctrlKey": true,
   "altKey": false,
   "hideFolderNote": true,
-  "templatePath": "",
+  "templatePath": "Templates/Folder_Notes_1.md",
   "autoCreate": false,
   "enableCollapsing": false,
   "excludeFolders": [],
@@ -48,7 +48,7 @@
     "explorer": true,
     "path": true
   },
-  "settingsTab": "file_explorer",
+  "settingsTab": "general",
   "supportedFileTypes": [
     "md",
     "canvas"

@@ -63,7 +63,7 @@
       "date-created-key": "date created",
       "date-modified": true,
       "date-modified-key": "date modified",
-      "format": "dddd, MMMM Do YYYY, h:mm a",
+      "format": "",
       "date-created-source-of-truth": "file system",
       "date-modified-source-of-truth": "file system",
       "convert-to-utc": false,

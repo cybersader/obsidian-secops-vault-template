@@ -15,12 +15,6 @@
       "icon": "paperclip",
       "name": "Export to PDF...",
       "mode": "any"
-    },
-    {
-      "id": "workspace:export-pdf",
-      "icon": "paperclip",
-      "name": "Export to PDF...",
-      "mode": "any"
     }
   ],
   "leftRibbon": [

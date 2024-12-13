@@ -3,8 +3,8 @@ aliases: []
 tags: []
 publish: true
 permalink:
-date created: Monday, December 9th 2024, 7:35 pm
-date modified: Monday, December 9th 2024, 10:21 pm
+date created: 2024-12-09T19:35:28-05:00
+date modified: 2024-12-10T22:26:23-05:00
 ---
 
 %% Begin Waypoint %%
@@ -46,8 +46,6 @@ date modified: Monday, December 9th 2024, 10:21 pm
 
 # Wiki Technical Guide
 
-- Screenshots
-	- ShareX for screenshots and GIFs - download from MS store
 - Lists
 	- Use Ctrl + "." as much as you can when starting lists or turning packs of newline delimited text into a bullet list
 - Linking - Pages, File Shares, URLs
@@ -78,6 +76,10 @@ date modified: Monday, December 9th 2024, 10:21 pm
 - Folder INBOXes or DROPs
 	- If a folder needs a DROPZONE, then just call it DROPZONE or DROP ___ and put things that need to be distilled.  You can even call it INBOX or leave the emoji (⬇️) in front of it.  
 
+# Useful Productivity Tools Alongside Vault
+
+- Screenshots
+	- ShareX for screenshots and GIFs - download from MS store
 # Ideas for improvements
 
 - Tasks are the hardest thing to integrate with a wiki - let alone in a corporate setting

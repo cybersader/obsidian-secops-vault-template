@@ -634,6 +634,12 @@
       },
       "docxer": {
         "startupType": "instant"
+      },
+      "excel": {
+        "startupType": "disabled"
+      },
+      "univer": {
+        "startupType": "disabled"
       }
     }
   }

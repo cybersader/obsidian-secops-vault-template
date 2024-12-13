@@ -1,12 +1,45 @@
 {
-  "presetFields": [],
+  "presetFields": [
+    {
+      "type": "DateTime",
+      "tagName": "date",
+      "icon": "calendar-clock",
+      "tooltip": "Accepts a date with time",
+      "colorClass": "date",
+      "options": {
+        "dateShiftInterval": "1 day",
+        "dateFormat": "YYYY-MM-DD",
+        "defaultInsertAsLink": false,
+        "linkPath": ""
+      },
+      "name": "date modified",
+      "id": "owfdlh",
+      "path": ""
+    },
+    {
+      "type": "DateTime",
+      "tagName": "date",
+      "icon": "calendar-clock",
+      "tooltip": "Accepts a date with time",
+      "colorClass": "date",
+      "options": {
+        "dateShiftInterval": "1 day",
+        "dateFormat": "YYYY-MM-DD",
+        "defaultInsertAsLink": false,
+        "linkPath": ""
+      },
+      "name": "date created",
+      "id": "eCs6Je",
+      "path": ""
+    }
+  ],
   "fileClassQueries": [],
   "displayFieldsInContextMenu": true,
   "globallyIgnoredFields": [],
   "classFilesPath": null,
   "isAutosuggestEnabled": true,
   "fileClassAlias": "fileClass",
-  "settingsVersion": "5.0",
+  "settingsVersion": "5.6",
   "firstDayOfWeek": 1,
   "enableLinks": true,
   "enableTabHeader": true,

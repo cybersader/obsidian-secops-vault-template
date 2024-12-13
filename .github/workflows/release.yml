@@ -115,10 +115,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload Release Asset
-        if: steps.decide.outputs.should_release == 'true'
+      - name: Upload Release Asset
         uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Provide the token here
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: obsidian-vault-${{ steps.extract_data.outputs.version }}.zip
           asset_name: obsidian-vault-${{ steps.extract_data.outputs.version }}.zip
           asset_content_type: application/zip
+
+
