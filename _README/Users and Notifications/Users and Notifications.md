@@ -1,8 +1,8 @@
 ---
 aliases: []
 tags: []
-date created: Monday, December 9th 2024, 10:02 am
-date modified: Monday, December 9th 2024, 7:49 pm
+date created: 2024-12-09T10:02:17-05:00
+date modified: 2024-12-13T16:04:29-05:00
 ---
 
 Looking for plugins or integrations that help with notifications for users.
@@ -12,4 +12,5 @@ Ideas:
 - Specific services
 - Obsidian app-based
 - Could use Microsoft Todo integration - [[_README]]
-
+- Use User DB YAML from other exports to populate users in things
+- 

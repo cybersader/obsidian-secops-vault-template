@@ -50,8 +50,13 @@
     }
   ],
   "defaultExportDirectoryMode": "Auto",
-  "openExportedFile": true,
+  "openExportedFile": false,
   "env": {},
   "showExportProgressBar": true,
-  "lastEditName": "Word (.docx)"
+  "lastEditName": "Word (.docx)",
+  "openExportedFileLocation": true,
+  "lastExportDirectory": {
+    "win32": "C:\\Users\\Cybersader\\Documents"
+  },
+  "lastExportType": "Latex"
 }

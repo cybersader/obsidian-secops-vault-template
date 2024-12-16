@@ -4,13 +4,12 @@ tags: []
 publish: true
 permalink:
 date created: 2024-12-09T19:35:28-05:00
-date modified: 2024-12-10T22:26:23-05:00
+date modified: 2024-12-15T21:12:34-05:00
 ---
 
 %% Begin Waypoint %%
 - **[[Corporate Obsidian Vault Workflow]]**
 - **[[Exporting Obsidian Pages]]**
-- **[[Formal Documentation in Obsidian]]**
 - **[[Implementation Guide - Security, Syncing, Collaboration, Exporting]]**
 - **[[Markdown, Callouts]]**
 - **[[Note YAML (Properties)]]**
@@ -23,7 +22,6 @@ date modified: 2024-12-10T22:26:23-05:00
 - **[[Syncing Vaults]]**
 - **[[Useful Browser Extensions]]**
 - **[[Users and Notifications]]**
-- **[[Using Templates]]**
 
 %% End Waypoint %%
 
@@ -34,6 +32,8 @@ date modified: 2024-12-10T22:26:23-05:00
 ## DROPZONE
 
 - Use ISO 8601 with YAML timestamp (leave moment JS empty)
+- Implement a user database with YAML
+- .
 
 ## 1) Folder/Vault Structure
 
@@ -80,6 +80,7 @@ date modified: 2024-12-10T22:26:23-05:00
 
 - Screenshots
 	- ShareX for screenshots and GIFs - download from MS store
+
 # Ideas for improvements
 
 - Tasks are the hardest thing to integrate with a wiki - let alone in a corporate setting

@@ -280,12 +280,12 @@
   "filesToIgnore": [
     {
       "label": "Excalidraw",
-      "match": "/.excalidraw/",
+      "match": ".excalidraw",
       "flags": "i"
     },
     {
       "label": "Templates",
-      "match": "/Templates/",
+      "match": "Templates",
       "flags": "i"
     }
   ],
