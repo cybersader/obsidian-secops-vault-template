@@ -10,6 +10,7 @@ date modified: 2024-12-15T21:12:34-05:00
 %% Begin Waypoint %%
 - **[[Corporate Obsidian Vault Workflow]]**
 - **[[Exporting Obsidian Pages]]**
+- **[[File Naming]]**
 - **[[Implementation Guide - Security, Syncing, Collaboration, Exporting]]**
 - **[[Markdown, Callouts]]**
 - **[[Note YAML (Properties)]]**
@@ -85,3 +86,5 @@ date modified: 2024-12-15T21:12:34-05:00
 
 - Tasks are the hardest thing to integrate with a wiki - let alone in a corporate setting
 	 - Obsidian + MS Todo - [Integration with Microsoft Todo - Plugins ideas - Obsidian Forum](https://forum.obsidian.md/t/integration-with-microsoft-todo/51156/19)
+		 - [LumosLovegood/obsidian-mstodo-sync: microsoft-todo for obsidian.md](https://github.com/LumosLovegood/obsidian-mstodo-sync)
+	 - 

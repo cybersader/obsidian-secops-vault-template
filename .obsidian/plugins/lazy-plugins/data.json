@@ -646,6 +646,30 @@
       },
       "edit-history": {
         "startupType": "disabled"
+      },
+      "obsidian-mstodo-sync": {
+        "startupType": "instant"
+      },
+      "excalibrain": {
+        "startupType": "instant"
+      },
+      "obsidian-file-path-to-uri": {
+        "startupType": "disabled"
+      },
+      "graph-link-types": {
+        "startupType": "disabled"
+      },
+      "obsidian-hover-editor": {
+        "startupType": "disabled"
+      },
+      "juggl": {
+        "startupType": "disabled"
+      },
+      "supercharged-links-obsidian": {
+        "startupType": "instant"
+      },
+      "date-inserter": {
+        "startupType": "disabled"
       }
     }
   }

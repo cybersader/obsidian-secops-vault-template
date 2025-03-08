@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "36eb1e05ab6f5cae",
+        "id": "311cc5d645564535",
         "type": "tabs",
         "children": [
           {
-            "id": "0930ed09f8813cf6",
+            "id": "5fec94aeee7a313b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Testing/Testing - Comments, Revision System.md",
+                "file": "release-info.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Testing - Comments, Revision System"
-            }
-          },
-          {
-            "id": "1d91a6b153b6aee2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_README/_README.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "_README"
+              "title": "release-info"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -55,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -199,7 +185,9 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "omnisearch:Omnisearch": false,
+      "cmdr:Open settings": false,
       "cmdr:Hider: Toggle status bar": false,
       "cmdr:Backlinks: Show backlinks": false,
       "cmdr:Outgoing links: Show outgoing links": false,
@@ -208,48 +196,46 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "templater-obsidian:Templater": false,
       "callout-manager:Insert Callout": false,
-      "obsidian-git:Open Git source control": false,
-      "cmdr:Open settings": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1d91a6b153b6aee2",
+  "active": "5fec94aeee7a313b",
   "lastOpenFiles": [
-    "_README/Users and Notifications/Users and Notifications.md",
-    "Testing/Testing - Comments, Revision System.md",
-    "_README/_README.md",
-    "Testing",
-    "User DB/User DB.md",
-    "Templates/Formal_Doc_1.md",
-    "Templates_Pandoc",
-    "Templates/Formal_Doc_1.docx",
-    "_Document Import Examples/docx_import_example_1.docx",
-    "_Document Import Examples/docx_import_example_1.md",
-    "Templates/Pandoc_Example_1.md",
-    "Templates/Untitled.md",
-    "User DB",
-    "_README/Using Templates/Using Templates.md",
-    "_README/Project Management/Project Management.md",
-    "_README/Exporting Obsidian Pages/Exporting Obsidian Pages.md",
-    "_README/Formal Documentation in Obsidian/Formal Documentation in Obsidian.md",
-    "Templates/Folder_Notes_1.md",
-    "_README/Implementation Guide - Security, Syncing, Collaboration, Exporting/Implementation Guide - Security, Syncing, Collaboration, Exporting.md",
-    "_README/Note YAML (Properties)/Note YAML (Properties).md",
-    "_README/Securing Obsidian/Securing Obsidian.md",
+    "Framework Mapping/Links to Frameworks/Links to Frameworks.md",
+    "Framework Mapping/Framework Mapping.md",
+    "Framework Mapping/Frameworker_Example/Framework_Example_Data/ID 1/ID 12/ID 12.md",
+    "Framework Mapping/Links to Frameworks",
     "_README/Shortcuts, Hotkeys/Shortcuts, Hotkeys.md",
-    "_README/Plugin Security Testing/Plugin Security Testing.md",
-    "_Document Import Examples",
-    "⬇️ DROPZONE/⬇️ DROPZONE.md",
-    "4 - OTHER/4 - OTHER.md",
-    "_README/Setting Up Obsidian/Setting Up Obsidian.md",
-    "0 - Projects, Workspaces/0 - Projects, Workspaces.md",
-    "release-info.md",
-    "New folder",
-    "_README/Plugin Security Testing",
-    "3 - Archive, Unstructured/3 - Archive, Unstructured.md",
-    "2 - Resources, Topics/2 - Resources, Topics.md",
-    "1 - Areas, Objectives, Initiatives/1 - Areas, Objectives, Initiatives.md",
-    "⭐VAULT GUIDE, README (example)",
-    "4 - OTHER/Frameworks, Ontologies, Mappings"
+    "_README/_README.md",
+    "⭐VAULT GUIDE, README (example)/⭐VAULT GUIDE, README (example).md",
+    "User DB/User DB.md",
+    "Framework Mapping/Frameworker_Example/Framework_Example_Data/ID 1/ID 11/ID 11.md",
+    "Framework Mapping/Frameworker_Example/Evidence_Containing_File_1.md",
+    "Framework Mapping/Frameworker_Example/Evidence Examples.md",
+    "Framework Mapping/Frameworker_Example/Framework_Example_Data/Framework_Example_Data.md",
+    "Framework Mapping/Frameworker_Example/Framework_Example_Data/ID 1/ID 1.md",
+    "Framework Mapping/Frameworker_Example/Frameworker_Example.md",
+    "Framework Mapping/Frameworker README/Frameworker README.md",
+    "Framework Mapping",
+    "Framework Mapping/Frameworker README",
+    "Framework Mapping/Frameworker_Example/Framework_Example_Data/ID 2/ID 21/ID 21.md",
+    "Framework Mapping/Frameworker_Example/Framework_Example_Data/ID 2/ID 22/ID 22.md",
+    "Framework Mapping/Frameworker_Example/Framework_Example_Data/ID 1/ID 12",
+    "Framework Mapping/Frameworker_Example/Framework_Example_Data/ID 1/ID 11",
+    "Framework Mapping/Frameworker_Example/Framework_Example_Data/ID 2/ID 22",
+    "Framework Mapping/Frameworker_Example/Framework_Example_Data/ID 2/ID 2.md",
+    "Framework Mapping/Frameworker_Example/Framework_Example_Data/ID 2/ID 21",
+    "Framework Mapping/Frameworker_Example/Framework_Example_Data/ID 2",
+    "Framework Mapping/Frameworker_Example/Framework_Example_Data/ID 1",
+    "4 - OTHER/Frameworks, Ontologies, Mappings/Frameworks, Ontologies, Mappings.md",
+    "Framework Mapping/Frameworker_Example/Framework_Example_Data",
+    "_README/File Naming/File Naming.md",
+    "Testing/Comments, Revision System.md",
+    "4 - OTHER/Cyber Intel, Risk Intel/Cyber Intel, Risk Intel.md",
+    "Testing/Tasks, Reminders, Notifications/Data Governance/Data Governance.md",
+    "Testing/Tasks, Reminders, Notifications/Vuln Mgmt/Vuln Mgmt.md",
+    "Testing/Tasks, Reminders, Notifications/Tasks, Reminders, Notifications.md",
+    "Testing/Tasks, Reminders, Notifications/Untitled.md",
+    "_README/Users and Notifications/Users and Notifications.md"
   ]
 }

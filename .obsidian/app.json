@@ -1,6 +1,6 @@
 {
   "promptDelete": false,
-  "useMarkdownLinks": true,
+  "useMarkdownLinks": false,
   "pdfExportSettings": {
     "pageSize": "Letter",
     "landscape": false,
