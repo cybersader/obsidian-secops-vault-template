@@ -198,7 +198,7 @@
         "startupType": "instant"
       },
       "obsidian-hider": {
-        "startupType": "disabled"
+        "startupType": "instant"
       },
       "home-tab": {
         "startupType": "disabled"
@@ -654,7 +654,7 @@
         "startupType": "instant"
       },
       "obsidian-file-path-to-uri": {
-        "startupType": "disabled"
+        "startupType": "instant"
       },
       "graph-link-types": {
         "startupType": "disabled"
@@ -663,7 +663,7 @@
         "startupType": "disabled"
       },
       "juggl": {
-        "startupType": "disabled"
+        "startupType": "short"
       },
       "supercharged-links-obsidian": {
         "startupType": "instant"
